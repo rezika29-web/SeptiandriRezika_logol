@@ -1,0 +1,38 @@
+{
+  "name": "test-logol",
+  "version": "1.0.0",
+  "description": "project technical test",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezika29-web/SeptiandriRezika_logol.git"
+  },
+  "keywords": [
+    "test",
+    "logol"
+  ],
+  "author": "rezika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rezika29-web/SeptiandriRezika_logol/issues"
+  },
+  "homepage": "https://github.com/rezika29-web/SeptiandriRezika_logol#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.15.1",
+    "sequelize-auto": "^0.8.8"
+  }
+}
