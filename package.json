@@ -1,0 +1,26 @@
+{
+  "name": "test-logol",
+  "version": "1.0.0",
+  "description": "project technical test",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezika29-web/SeptiandriRezika_logol.git"
+  },
+  "keywords": [
+    "test",
+    "logol"
+  ],
+  "author": "rezika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rezika29-web/SeptiandriRezika_logol/issues"
+  },
+  "homepage": "https://github.com/rezika29-web/SeptiandriRezika_logol#readme"
+}
