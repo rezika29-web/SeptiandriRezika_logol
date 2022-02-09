@@ -3,6 +3,7 @@ module.exports = (app) => {
     let router = require("express").Router()
   
     router.get("/", karyawan.readAll)
+    router.get("/countData", karyawan.countData)
     router.get("/:nik", karyawan.readByNik)
     router.post("/", karyawan.create)
     router.put("/:nik", karyawan.update)

@@ -3,12 +3,7 @@ const Karyawan = db.karyawan
 
 exports.create = async (req, res) => {
   // valnikasi request
-  if (!req.body.elemenData) {
-    res.status(400).send({
-      message: "Content can not be empty!"
-    });
-    return;
-  }
+  
 
   const data_karyawan = {
     elemenData: req.body.elemenData,
@@ -31,6 +26,19 @@ exports.create = async (req, res) => {
     });
   })
 } 
+exports.countData = async (req, res) => {
+  await Karyawan.max('id')
+  .then(data => {
+    res.status(200).send((data).toString());
+    // res.send(data);
+  })
+  .catch(err => {
+    res.status(500).send({
+      message:
+        err.message || "Some error occurred while retrieving data."
+    });
+  });
+}
 
 exports.readAll = async (req, res) => {
   await Karyawan.findAll({})
